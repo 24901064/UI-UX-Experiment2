@@ -1,60 +1,51 @@
-# Implementation of Univariate Linear Regression
-## AIM:
-To implement univariate Linear Regression to fit a straight line using least squares.
+# 🍴 Kitchary – Restaurant Order Management (UI/UX Experiment)
 
-## Equipments Required:
-1. Hardware – PCs
-2. Anaconda – Python 3.7 Installation / Jupyter notebook
+This repository contains the **UI/UX design experiment** for the project  
+**Kitchary – Restaurant Order Management**, developed as part of internship work at **VelanDev Solutions Pvt. Ltd.**
 
-## Algorithm
-1. Get the independent variable X and dependent variable Y.
-2. Calculate the mean of the X -values and the mean of the Y -values.
-3. Find the slope m of the line of best fit using the formula. 
-<img width="231" alt="image" src="https://user-images.githubusercontent.com/93026020/192078527-b3b5ee3e-992f-46c4-865b-3b7ce4ac54ad.png">
-4. Compute the y -intercept of the line by using the formula:
-<img width="148" alt="image" src="https://user-images.githubusercontent.com/93026020/192078545-79d70b90-7e9d-4b85-9f8b-9d7548a4c5a4.png">
-5. Use the slope m and the y -intercept to form the equation of the line.
-6. Obtain the straight line equation Y=mX+b and plot the scatterplot.
+---
 
-## Program:
+## 📑 Aim
+To design and develop **mobile and web layouts** for the restaurant order management application *Kitchary* by applying **Gestalt principles**, **UI patterns**, **interaction behaviors**, and **branding guidelines**, ensuring usability and a professional user experience.
+
+---
+
+## ⚙️ Algorithm (Design Workflow)
+1. **Requirement Study** – Analyze the project report and identify user/admin needs.  
+2. **Apply Gestalt Principles** – Proximity, Similarity, Continuity, Figure-Ground, Closure for visual clarity.  
+3. **Design Layouts** –  
+   - Mobile (User): Home/Menu, Cart, Order Tracking.  
+   - Web (Admin): Dashboard, Orders, Menu Management.  
+4. **Select UI Elements & Patterns** – Cards, Navigation bars, Buttons, Forms, Tables.  
+5. **Develop Branding** – Create logo using Canva with consistent colors and typography.  
+6. **Create Mockups** – High-fidelity designs generated using Figma/AI tools.  
+7. **Compile Report** – Combine layouts, explanations, and logo into a structured design report (PDF).  
+
+---
+
+## 📲 Output
+- **Design Report**: `Design_Report.pdf` (complete explanation with layouts and branding).  
+- **High-Fidelity Mockups**:  
+  - Mobile User App → Home/Menu, Cart, Order Tracking.  
+  - Web Admin Dashboard → KPIs, Menu, Orders.  
+- **Logo**: Canva-designed logo with orange and green branding.  
+
+Mockup Preview:  
+<img width="406" height="784" alt="image" src="https://github.com/user-attachments/assets/814264f0-ad6a-4968-be47-777c628a08bc" />
 
 
-Developed by: BHARANI KUMAR
+---
 
+## ✅ Result
+The design for *Kitchary* successfully integrates **Gestalt principles**, modern **UI/UX patterns**, and **branding guidelines** to create a user-friendly restaurant order management system.  
+- Mobile layout ensures **ease of use** for customers.  
+- Web dashboard provides **efficient management** for admins.  
+- Branding and logo unify the product’s identity.  
 
-RegisterNumber:  212224230035
+Thus, the **UI/UX experiment objective is achieved**.  
 
-```
-import numpy as np
-import matplotlib.pyplot as plt
-X=np.array(eval(input()))
-Y=np.array(eval(input()))
-X_mean=np.mean(X)
-print("X_mean =",X_mean)
-Y_mean=np.mean(Y)
-print("Y_mean =",Y_mean)
-num=0
-denum=0
+---
 
-for i in range(len(X)):
-  num+=(X[i]-X_mean)*(Y[i]-Y_mean)
-  denum+=(X[i]-X_mean)**2
-m=num/denum
-
-print("Slope =",m)
-b=Y_mean - m*X_mean
-print("Y-intercept =",b)
-Y_pred=m*X+b
-print("Predicted Value of Y using X =",Y_pred)
-plt.scatter(X,Y,color='red')
-plt.xlabel("X_values")
-plt.ylabel("Y_values")
-plt.plot(X,Y_pred,color='blue') 
-plt.show()
-```
-## Output:
-
-<img width="1200" height="821" alt="Screenshot 2025-08-30 090112" src="https://github.com/user-attachments/assets/af0ea67e-f821-4436-8671-e39594d4ab37" />
-
-## Result:
-Thus the univariate Linear Regression was implemented to fit a straight line using least squares using python programming.
+## 👨‍💻 Author
+**BHARANI KUMAR S**  
+B.Tech – AI & DS, Saveetha Engineering College
